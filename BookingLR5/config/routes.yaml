@@ -1,0 +1,123 @@
+getCustomers:
+  path:       /customers
+  controller: App\Controller\CustomerController::getCustomers
+  methods:    GET
+
+getCustomer:
+  path:       /customer/{id}
+  controller: App\Controller\CustomerController::getCustomer
+  methods:    GET
+  defaults:
+    id: 1
+
+postCustomer:
+  path:       /customers
+  controller: App\Controller\CustomerController::createCustomer
+  methods:    POST
+
+patchCustomer:
+  path:       /customer/{id}
+  controller: App\Controller\CustomerController::patchCustomer
+  methods:    PATCH
+  defaults:
+    id: 1
+
+deleteCustomer:
+  path:       /customer/{id}
+  controller: App\Controller\CustomerController::deleteCustomer
+  methods:    DELETE
+  defaults:
+    id: 1
+
+getHotels:
+  path:       /hotels
+  controller: App\Controller\HotelController::getHotels
+  methods:    GET
+
+getHotel:
+  path:       /hotel/{id}
+  controller: App\Controller\HotelController::getHotel
+  methods:    GET
+  defaults:
+    id: 1
+
+postHotel:
+  path:       /hotels
+  controller: App\Controller\HotelController::createHotel
+  methods:    POST
+
+patchHotel:
+  path:       /hotel/{id}
+  controller: App\Controller\HotelController::patchHotel
+  methods:    PATCH
+  defaults:
+    id: 1
+
+deleteHotel:
+  path:       /hotel/{id}
+  controller: App\Controller\HotelController::deleteHotel
+  methods:    DELETE
+  defaults:
+    id: 1
+
+getRoomsByHotelId:
+  path:       /hotel-rooms/{hotelId}
+  controller: App\Controller\RoomController::getRoomsByHotelId
+  methods:    GET
+
+getRoom:
+  path:       /room/{id}
+  controller: App\Controller\RoomController::getRoom
+  methods:    GET
+  defaults:
+    id: 1
+
+postRoom:
+  path:       /room
+  controller: App\Controller\RoomController::createRoom
+  methods:    POST
+
+patchRoom:
+  path:       /room/{id}
+  controller: App\Controller\RoomController::patchRoom
+  methods:    PATCH
+  defaults:
+    id: 1
+
+deleteRoom:
+  path:       /room/{id}
+  controller: App\Controller\RoomController::deleteRoom
+  methods:    DELETE
+  defaults:
+    id: 1
+
+getBooksByCustomerId:
+  path:       /customer-books/{customerId}
+  controller: App\Controller\BookController::getBooksByCustomerId
+  methods:    GET
+
+getBook:
+  path:       /book/{id}
+  controller: App\Controller\BookController::getBook
+  methods:    GET
+  defaults:
+    id: 1
+
+postBook:
+  path:       /book
+  controller: App\Controller\BookController::createBook
+  methods:    POST
+
+patchBook:
+  path:       /book/{id}
+  controller: App\Controller\BookController::patchBook
+  methods:    PATCH
+  defaults:
+    id: 1
+
+deleteBook:
+  path:       /book/{id}
+  controller: App\Controller\BookController::deleteBook
+  methods:    DELETE
+  defaults:
+    id: 1
